@@ -39,7 +39,7 @@ class game{
         game(int a,int b){
             Ini();
             for(int i=1;i<=a;i++){
-                int k,y;
+                int k;
                 std::cout<<"\nEnter the starting position of ladder "<<i<<": ";
                 std::cin>>k;
                 std::cout<<"\nEnter the ending position of ladder "<<i<<": ";
