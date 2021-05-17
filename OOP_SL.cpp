@@ -39,18 +39,20 @@ class game{
         game(int a,int b){
             Ini();
             for(int i=1;i<=a;i++){
-                int k;
+                int k,y;
                 std::cout<<"\nEnter the starting position of ladder "<<i<<": ";
                 std::cin>>k;
                 std::cout<<"\nEnter the ending position of ladder "<<i<<": ";
-                std::cin>>a[k];
+		const int y=k;
+                std::cin>>a[y];
             }
             for(int i=1;i<=b;i++){
                 int k;
                 std::cout<<"\nEnter the starting position of snake "<<i<<": ";
                 std::cin>>k;
                 std::cout<<"\nEnter the ending position of snake "<<i<<": ";
-                std::cin>>a[k];
+                const int y=k;
+                std::cin>>a[y];
             }
         }
         ~game(){
